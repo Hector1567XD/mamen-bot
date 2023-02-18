@@ -17,7 +17,16 @@ $botman->hears('di lo tuyo mamen', function ($bot) {
         "En efecto",
         "Turbio",
         "Las condiciones en las que nacemos no determinan las personas en las que nos convertiremos",
-        "Chicos, recuerden, lo mas importante es aceptarse a uno mismo, cuidar el autoestima y respetarnos los unos a los otros"
+        "Chicos, recuerden, lo mas importante es aceptarse a uno mismo, cuidar el autoestima y respetarnos los unos a los otros",
+        "Te pido perdon de la unica forma que se"
+    ];
+    $key = array_rand($frasesDeMamen);
+    $bot->reply($frasesDeMamen[$key]);
+});
+
+$botman->hears('De que forma se pide perdon?', function ($bot) {
+    $frasesDeMamen = [
+        "De la unica forma que se"
     ];
     $key = array_rand($frasesDeMamen);
     $bot->reply($frasesDeMamen[$key]);
