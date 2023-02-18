@@ -24,7 +24,7 @@ $botman->hears('di lo tuyo mamen', function ($bot) {
     $bot->reply($frasesDeMamen[$key]);
 });
 
-$botman->hears('De que forma se pide perdon?', function ($bot) {
+$botman->hears('de que forma se pide perdon', function ($bot) {
     $frasesDeMamen = [
         "De la unica forma que se"
     ];
