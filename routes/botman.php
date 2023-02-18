@@ -3,7 +3,11 @@ use App\Http\Controllers\BotManController;
 
 $botman = resolve('botman');
  
-$botman->hears('di lo tuyo mamen!', function ($bot) {
+$botman->hears('start', function ($bot) {
+    $bot->reply("no");
+});
+
+$botman->hears('di lo tuyo mamen', function ($bot) {
     $frasesDeMamen = [
         "Huele boxer",
         "Nadie:",
@@ -18,5 +22,3 @@ $botman->hears('di lo tuyo mamen!', function ($bot) {
     $key = array_rand($frasesDeMamen);
     $bot->reply($frasesDeMamen[$key]);
 });
-
-$botman->hears('Start conversation', BotManController::class.'@startConversation');
