@@ -58,7 +58,9 @@ $botman->hears('necesito un consejo mamen', function ($bot) {
         "Nunca desistas de un sueño",
         "No le doy consejos a geis",
         "Empieza vendiendo bonice",
-        "Tá peluo"
+        "Tá peluo",
+        "Si mi jeva me dice eso le digo fuera de aquí loca",
+        "Un axioma es algo que no necesita demostrarse"
     ];
     $key = array_rand($frasesDeMamen);
     $bot->reply($frasesDeMamen[$key]);
