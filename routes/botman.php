@@ -9,6 +9,7 @@ $botman->hears('start', function ($bot) {
 
 $botman->hears('di lo tuyo mamen', function ($bot) {
     $frasesDeMamen = [
+        "Porcinos...",
         "Huele boxer",
         "Vamos contra unos huele boxer",
         "Nadie:",
