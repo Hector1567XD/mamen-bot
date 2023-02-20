@@ -39,3 +39,23 @@ $botman->hears('mamen que te pasa', function ($bot) {
     $key = array_rand($frasesDeMamen);
     $bot->reply($frasesDeMamen[$key]);
 });
+
+$botman->hears('necesito un consejo mamen', function ($bot) {
+    $frasesDeMamen = [
+        "Conocete a ti mismo",
+        "Aceptate tal y como eres",
+        "Identifica tus aspectos de mejora",
+        "Deja atras el pasado",
+        "Mira tu vida con mas optimismo",
+        "Ten paciencia contigo mismo",
+        "Aprendete a amarte a ti mismo",
+        "Cuando no tenía nada que perder, era libre",
+        "Las lágrimas son palabras que necesitan ser escritas",
+        "Las personas cambian cuando se dan cuenta del poder que tienen para cambiar las cosas",
+        "El dolor de ayer es la fuerza de hoy",
+        "Nunca desistas de un sueño"
+    ];
+    $key = array_rand($frasesDeMamen);
+    $bot->reply($frasesDeMamen[$key]);
+});
+
